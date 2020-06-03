@@ -20,8 +20,8 @@ import cx_Oracle
 # In[6]:
 
 
-dsn_tns = cx_Oracle.makedsn('flexabib-scan.mtn.co.za', '1521', service_name='bibp') # if needed, place an 'r' before any parameter in order to address special characters such as '\\'.\n"
-conn = cx_Oracle.connect(user=r'lau_s', password='ShwiC1_M167$O', dsn=dsn_tns) # if needed, place an 'r' before any parameter in order to address special characters such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name
+dsn_tns = cx_Oracle.makedsn(DSN_name, Port, service_name=service_name) # if needed, place an 'r' before any parameter in order to address special characters such as '\\'.\n"
+conn = cx_Oracle.connect(user=user, password=password, dsn=dsn_tns) # if needed, place an 'r' before any parameter in order to address special characters such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name
 
 
 # In[7]:
