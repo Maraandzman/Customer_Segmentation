@@ -57,11 +57,15 @@ unsupervised count optimal number of clusters:
 -  show graphical characteristics of each value group
 
 **Frequency_Recency_Scatter**
+
 ![](Frequency_Recency_Scatter.png)
 
+
 **Revenue_Recency_Scatter**
+
 ![](Revenue_Recency_Scatter.png)
 
 
 **Revenue_Frequency_Scatter**
+
 ![](Revenue_Frequency_Scatter.png)
