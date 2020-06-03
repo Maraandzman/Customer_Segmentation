@@ -335,8 +335,13 @@ df2.groupby('Segment').count()
 
 # In[43]:
 
+#Graphically illustrate characteristics of the 3 value groupings for RFM
+
 
 # Revenue vs Frequency
+#High Value: High frequency & High Revenue Purchases
+#Mid Value: Mid Frequency & High Revenue
+#Low Value: Low Frequency & Low Value
 tx_graph = df2.query("Revenue < 1000 and Frequency < 30")
 
 plot_data = [
@@ -384,7 +389,9 @@ fig = go.Figure(data=plot_data, layout=plot_layout)
 pyoff.iplot(fig)
 
 #Revenue Recency
-
+#High Value: High frequency & High Recency
+#Mid Value: Mid High & High Recency
+#Low Value: Low Frequency & Low Value
 tx_graph = df2.query("Revenue < 1000 and Recency < 30")
 
 plot_data = [
@@ -432,6 +439,9 @@ fig = go.Figure(data=plot_data, layout=plot_layout)
 pyoff.iplot(fig)
 
 # Revenue vs Frequency
+#High Value: High Frequency & High Recency 
+#Mid Value: Mid-Low Frequency & low Recency
+#Low Value: Low Frequency & Low Value
 tx_graph = df2.query("Frequency < 30 and Recency < 30")
 
 plot_data = [
