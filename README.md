@@ -51,7 +51,7 @@ unsupervised count optimal number of clusters:
 -  Allocate cluster group to all customers for each RFM
 -  Create new feature 'Overall Score' - sum eaach customer's score across Revenue, Frequency and Recency cluster
 
-![](Overall_score.png)
+![](Overall_score.PNG)
 
 -  Group each overall score into value bracket(High Value Customers, Low Value Customers, Mid Value Customers)
 -  show graphical characteristics of each value group
