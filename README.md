@@ -29,4 +29,39 @@ Packages: pandas, numpy, sklearn, KMeans, matplotlib, seaborn
  
  # EDA
  ---
+ - Recency = Last day of month - max date of recharge per msisdn
+ 
  ![](Recency_hist.png)
+ 
+ - Frequency = Count of number of recharges in given month per msisdn
+ 
+ ![](Frequency_hist.png)
+ 
+ - Revenue = Sum ASPU per msisdn 
+
+![](Revenue_hist.png)
+
+# Model Development
+---
+
+unsupervised count optimal number of clusters:
+
+![](N_Clusters.png)
+
+-  Allocate cluster group to all customers for each RFM
+-  Create new feature 'Overall Score' - sum eaach customer's score across Revenue, Frequency and Recency cluster
+
+![](Overall_score.png)
+
+-  Group each overall score into value bracket(High Value Customers, Low Value Customers, Mid Value Customers)
+-  show graphical characteristics of each value group
+
+**Frequency_Recency_Scatter**
+![](Frequency_Recency_Scatter.png)
+
+**Revenue_Recency_Scatter**
+![](Revenue_Recency_Scatter.png)
+
+
+**Revenue_Frequency_Scatter**
+![](Revenue_Frequency_Scatter.png)
