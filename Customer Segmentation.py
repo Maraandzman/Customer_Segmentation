@@ -27,7 +27,7 @@ conn = cx_Oracle.connect(user=user, password=password, dsn=dsn_tns) # if needed,
 # In[7]:
 
 
-query = """ select * from lau_s.segment_analysis where last_recharge_date between '01/FEB/20' and '29/FEB/20' """
+query = """ select * from user.segment_analysis where last_recharge_date between '01/FEB/20' and '29/FEB/20' """
 df_ora = pd.read_sql(query, con=conn)
 df_ora.head()
 
